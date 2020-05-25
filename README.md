@@ -11,7 +11,7 @@ git submodule add xxx.git where_you_want_to_put
 # 抓
 git clone --recursive 是clone並且把submodule也clone
 
-若一般的clone是不會抓submodule 
+若一般的clone是不會抓submodule
 需要透過
 git submodule init
 git submodule update --recursive
@@ -19,6 +19,7 @@ git submodule update --recursive
 補齊submodule
 
 # 更新Submodule
+
 git submodule foreach --recursive git pull origin master
 
 cd到submodule folder後的git操作就是那個submodule
